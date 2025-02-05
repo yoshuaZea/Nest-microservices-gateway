@@ -29,7 +29,6 @@ COPY --from=builder /usr/src/app/node_modules ./node_modules
 
 # Copy /dist
 COPY --from=builder /usr/src/app/dist ./dist
-COPY --from=builder /usr/src/app/prisma ./prisma
 
 ENV NODE_ENV=production
 
